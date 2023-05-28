@@ -64,6 +64,11 @@ output_next:
     jb output_start
     
 end_program:
+    mov dl, '1'
+    call WriteChar
+    mov dl, '8'
+    call WriteChar
+    
     call Terminate ;terminate the program
 
 include ../common.asm
