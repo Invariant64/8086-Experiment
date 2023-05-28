@@ -31,7 +31,7 @@ proc_digital_in:
     jmp proc_next
 proc_save:
     cmp al, 0dh
-    jne proc_read_end
+    ;jne proc_read_end
     mov ax, bx ; result saved in ax
 
 proc_read_end:
