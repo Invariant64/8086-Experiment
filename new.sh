@@ -4,7 +4,7 @@ then
     exit
 fi
 
-if [ ! -f "./"$1 ];
+if [ -d "./"$1/ ];
 then
     echo $1" is existed!"
     exit
@@ -13,4 +13,3 @@ fi
 mkdir $1
 
 cp program.asm ./$1/$1.asm
-cp common.asm ./$1/common.asm

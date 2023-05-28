@@ -4,7 +4,7 @@ then
     exit
 fi
 
-if [ ! -f "./"$1 ];
+if [ ! -d "./"$1/ ];
 then
     ./new.sh $1
     echo "Task doesn't exist, has created "$1"\n"
